@@ -45,6 +45,7 @@
   DEFINE UFS_ENABLE                   = FALSE
   DEFINE CAPSULE_SUPPORT              = FALSE
   DEFINE FOLLOW_BGRT_SPEC             = FALSE
+  DEFINE LOAD_OPTION_ROMS	      = FALSE
 
   #
   # Crypto Support
@@ -160,7 +161,6 @@
   # Security options:
   #
   DEFINE SECURE_BOOT_ENABLE           = FALSE
-
   #
   # Network definition
   #
