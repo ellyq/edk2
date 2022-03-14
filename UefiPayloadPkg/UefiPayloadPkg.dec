@@ -111,16 +111,21 @@ gUefiPayloadPkgTokenSpaceGuid.PcdMemoryTypeEfiRuntimeServicesCode|0x100|UINT32|0
 
 # Size of the region used by UEFI in permanent memory
 gUefiPayloadPkgTokenSpaceGuid.PcdSystemMemoryUefiRegionSize|0x04000000|UINT32|0x00000017
+gUefiPayloadPkgTokenSpaceGuid.PcdLoadOptionRoms|TRUE|BOOLEAN|0x00000018
 
-gUefiPayloadPkgTokenSpaceGuid.PcdPcdDriverFile|{ 0x57, 0x72, 0xcf, 0x80, 0xab, 0x87, 0xf9, 0x47, 0xa3, 0xfe, 0xD5, 0x0B, 0x76, 0xd8, 0x95, 0x41 }|VOID*|0x00000018
+[PcdsFixedAtBuild]
+## Specifies the initial value for Register_A in RTC.
+# @Prompt Initial value for Register_A in RTC.
+gPcAtChipsetPkgTokenSpaceGuid.PcdInitialValueRtcRegisterA|0x26|UINT8|0x00000006
+
+gUefiPayloadPkgTokenSpaceGuid.PcdPcdDriverFile|{ 0x57, 0x72, 0xcf, 0x80, 0xab, 0x87, 0xf9, 0x47, 0xa3, 0xfe, 0xD5, 0x0B, 0x76, 0xd8, 0x95, 0x41 }|VOID*|0x00000019
 
 # Boot Manager Key
 gUefiPayloadPkgTokenSpaceGuid.PcdBootManagerEscape|FALSE|BOOLEAN|0x00000020
 
 ## FFS filename to find the default variable initial data file.
 # @Prompt FFS Name of variable initial data file
- gUefiPayloadPkgTokenSpaceGuid.PcdNvsDataFile |{ 0x1a, 0xf1, 0xb1, 0xae, 0x42, 0xcc, 0xcf, 0x4e, 0xac, 0x60, 0xdb, 0xab, 0xf6, 0xca, 0x69, 0xe6 }|VOID*|0x00000025
-
+gUefiPayloadPkgTokenSpaceGuid.PcdNvsDataFile |{ 0x1a, 0xf1, 0xb1, 0xae, 0x42, 0xcc, 0xcf, 0x4e, 0xac, 0x60, 0xdb, 0xab, 0xf6, 0xca, 0x69, 0xe6 }|VOID*|0x00000025
 
 ## Indicates if Universal payload support FDT
 #-  PcdHandOffFdtEnable is TRUE, HandOffData is FDT
@@ -135,3 +140,4 @@ gUefiPayloadPkgTokenSpaceGuid.PcdPciReservedPMemAbove4GBLimit|0x0000000000000000
 
 gUefiPayloadPkgTokenSpaceGuid.SizeOfIoSpace|0|UINT8|0x0000002B
 gUefiPayloadPkgTokenSpaceGuid.PcdFDTPageSize|8|UINT8|0x0000002C
+gUefiPayloadPkgTokenSpaceGuid.PcdNvsDataFile |{ 0x1a, 0xf1, 0xb1, 0xae, 0x42, 0xcc, 0xcf, 0x4e, 0xac, 0x60, 0xdb, 0xab, 0xf6, 0xca, 0x69, 0xe6 }|VOID*|0x00000025

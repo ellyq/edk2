@@ -44,7 +44,6 @@
   DEFINE NVME_ENABLE                  = TRUE
   DEFINE UFS_ENABLE                   = FALSE
   DEFINE CAPSULE_SUPPORT              = FALSE
-  DEFINE LOCKBOX_SUPPORT              = FALSE
   DEFINE FOLLOW_BGRT_SPEC             = FALSE
   DEFINE USE_PCO_MMIO_EMMC            = FALSE
 
