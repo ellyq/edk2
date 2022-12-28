@@ -481,8 +481,6 @@
   gUefiCpuPkgTokenSpaceGuid.PcdCpuDisableMtrrProgramming|TRUE
 
 [PcdsPatchableInModule.X64]
-  gPcAtChipsetPkgTokenSpaceGuid.PcdRtcIndexRegister|$(RTC_INDEX_REGISTER)
-  gPcAtChipsetPkgTokenSpaceGuid.PcdRtcTargetRegister|$(RTC_TARGET_REGISTER)
 !if $(NETWORK_DRIVER_ENABLE) == TRUE
   gEfiNetworkPkgTokenSpaceGuid.PcdAllowHttpConnections|TRUE
 !endif
@@ -591,6 +589,9 @@
   gEfiMdeModulePkgTokenSpaceGuid.PcdTestKeyUsed|FALSE
   gUefiCpuPkgTokenSpaceGuid.PcdSevEsIsEnabled|0
   gEfiMdeModulePkgTokenSpaceGuid.PcdPciDisableBusEnumeration|TRUE
+
+  gPcAtChipsetPkgTokenSpaceGuid.PcdRtcIndexRegister|$(RTC_INDEX_REGISTER)
+  gPcAtChipsetPkgTokenSpaceGuid.PcdRtcTargetRegister|$(RTC_TARGET_REGISTER)
 
 ################################################################################
 #
