@@ -1046,6 +1046,10 @@
   UefiPayloadPkg/GraphicsOutputDxe/GraphicsOutputDxe.inf
 !endif
 
+!if $(LOAD_OPTION_ROMS) == TRUE
+  UefiPayloadPkg/PciPlatformDxe/PciPlatformDxe.inf
+!endif
+
 !if $(PERFORMANCE_MEASUREMENT_ENABLE)
   MdeModulePkg/Universal/Acpi/FirmwarePerformanceDataTableDxe/FirmwarePerformanceDxe.inf
 !endif
